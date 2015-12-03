@@ -1,13 +1,13 @@
-clone: creates a remote repository in the terminal, this repository is the same thing as the url needed to execute this command
-
-push: loads all changes to github
-
+Jclone: creates a remote repository in the terminal, this repository is the same thing as the url needed to execute this command
+O
+Hpush: loads all changes to github
+N
 pull: updates any changes made on github
 
-commit: saves changes in the remote repository
-
-reset: undoes certain commits
-
+Ccommit: saves changes in the remote repository
+E
+Nreset: undoes certain commits
+A
 status: shows the repository
 
 diff: shows changes made to the wanted file
