@@ -1,5 +1,5 @@
 Jclone: creates a remote repository in the terminal, this repository is the same thing as the url needed to execute this command
-O
+Ooooooo
 Hpush: loads all changes to github
 N
 pull: updates any changes made on github
