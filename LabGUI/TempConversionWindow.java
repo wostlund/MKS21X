@@ -6,6 +6,7 @@ public class TempConversionWindow extends JFrame implements ActionListener{
     private Container pane;
     private JLabel ans;
     private JTextField t;
+    private String asghj = "Please enter a number :)";
 
     public TempConversionWindow(){
 	this.setTitle("Temperature Converter");
@@ -39,14 +40,15 @@ public class TempConversionWindow extends JFrame implements ActionListener{
 	String s = t.getText();
 	double m;
 	try{
-	    m = Integer.parseInt(s);
+	    m = Double.valueOf(s);
 	    if(event.equals("Celcius")){
 		ans.setText(""+TempConverter.FtoC(m));
 	    }else{
 		ans.setText(""+TempConverter.CtoF(m));
 	    }
 	}catch(NumberFormatException carlos){
-	    ans.setText("Error: Please enter an number, you oaf!");
+	    ans.setText(asghj);
+	    asghj="Please stop and enter a number >:(";
 	}
     }
 }
