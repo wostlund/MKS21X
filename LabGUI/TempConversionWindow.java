@@ -42,9 +42,9 @@ public class TempConversionWindow extends JFrame implements ActionListener{
 	try{
 	    m = Double.valueOf(s);
 	    if(event.equals("Celcius")){
-		ans.setText(""+TempConverter.FtoC(m)+" degrees Celius");
+		ans.setText(""+TempConverter.FtoC(m));
 	    }else{
-		ans.setText(""+TempConverter.CtoF(m)+" degrees Farenheit");
+		ans.setText(""+TempConverter.CtoF(m));
 	    }
 	}catch(NumberFormatException carlos){
 	    ans.setText(asghj);
