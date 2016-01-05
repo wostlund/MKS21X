@@ -16,12 +16,10 @@ public class Sorts{
 
     public static void insertion(int jeff[]){
 	for (int i=0; i<jeff.length; i++){
-	    for(int p=i; p>0; p--){
-		if(jeff[p]<jeff[p-1]){
-		    int k = jeff[p];
-		    jeff[p]=jeff[p-1];
-		    jeff[p-1] = k;
-		}
+	    for(int p=i; p>0 && jeff[p]<jeff[p-1] ; p--){
+		int k = jeff[p];
+		jeff[p]=jeff[p-1];
+		jeff[p-1] = k;
 	    }
 	}
     }
