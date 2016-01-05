@@ -1,6 +1,6 @@
 public class Sorts{
     
-    public static void selectionSort(int jeff[]){
+    public static void selectionSort(int[]jeff){
 	for(int i=0; i<jeff.length-1; i++){
 	    int min = i;
 	    int p = jeff[i];
@@ -15,7 +15,7 @@ public class Sorts{
 	}
     }
 
-    public static void insertionSort(int jeff[]){
+    public static void insertionSort(int[]jeff){
 	for (int i=0; i<jeff.length; i++){
 	    for(int p=i; p>0 && jeff[p]<jeff[p-1] ; p--){
 		int k = jeff[p];
@@ -25,9 +25,21 @@ public class Sorts{
 	}
     }
 
+    public static void bubbleSort(int[]jeff){
+	for(int i=jeff.length; i>-1; i--){
+	    for(int k=0; k<i-1; k++){
+		if(jeff[k]>jeff[k+1]){
+		    int a = jeff[k];
+		    jeff[k]=jeff[k+1];
+		    jeff[k+1]=a;
+		}
+	    }
+	}
+    }
+    
     public static void main(String[]args){
 	int[] m = {2, 4, 1, 2, 4, 2, 12, 4, 3, 23, 43, 234, 43, 342, 1};
-	insertionSort(m);
+	bubbleSort(m);
 	for(int i=0; i<m.length; i++){
 	    System.out.print(m[i]+" ");
 	}
