@@ -1,5 +1,6 @@
 public class Sorts{
-    public static void selection(int jeff[]){
+    
+    public static void selectionSort(int jeff[]){
 	for(int i=0; i<jeff.length-1; i++){
 	    int min = i;
 	    int p = jeff[i];
@@ -14,7 +15,7 @@ public class Sorts{
 	}
     }
 
-    public static void insertion(int jeff[]){
+    public static void insertionSort(int jeff[]){
 	for (int i=0; i<jeff.length; i++){
 	    for(int p=i; p>0 && jeff[p]<jeff[p-1] ; p--){
 		int k = jeff[p];
@@ -26,7 +27,7 @@ public class Sorts{
 
     public static void main(String[]args){
 	int[] m = {2, 4, 1, 2, 4, 2, 12, 4, 3, 23, 43, 234, 43, 342, 1};
-	insertion(m);
+	insertionSort(m);
 	for(int i=0; i<m.length; i++){
 	    System.out.print(m[i]+" ");
 	}
